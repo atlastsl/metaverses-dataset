@@ -24,9 +24,8 @@ function parseDateParams(dateStr) {
 }
 
 async function fetchAllData(params) {
-    const payload = {};
+    const payload = {asset_contract: '0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d'};
     if (params['collection']) payload['collection'] = params['collection'];
-    if (params['asset']) payload['asset_contract'] = `0x${params['asset']}`;
     if (params['fdate']) {
         if (!payload['mvt_date']) payload['mvt_date'] = {};
         payload['mvt_date']['$gte'] = parseDateParams(params['fdate']);
@@ -367,7 +366,7 @@ async function main() {
     console.info(`${new Date()} - Fetching Operations...`);
     const operations = await fetchAllData(params);
     console.info(`${new Date()} - Operations fetched successfully. ${operations.length} operations !!!`);
-    
+
     await mongoose.disconnect();
     console.info(`${new Date()} - Disconnected from datasbase successfully !!`);
 

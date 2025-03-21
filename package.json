@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "export": "node main.js -c decentraland -a f87e31492faf9a91b02ee0deaad50d51d56d5d4d -t sale -s 01/01/2018 -e 01/07/2018 -l 10",
-    "exportl": "node mainl.js -c decentraland -t sale -s 01/01/2018 -e 01/07/2018 -d euclidean"
+    "exportl": "node mainl.js -c decentraland -t sale -s 01/10/2021 -e 01/01/2022 -d euclidean"
   },
   "keywords": [],
   "author": "",
