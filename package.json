@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "export": "node main.js -c decentraland -a f87e31492faf9a91b02ee0deaad50d51d56d5d4d -t sale -s 01/01/2018 -e 01/07/2018 -l 10",
-    "exportl": "node mainl.js -c decentraland -t sale -s 01/01/2018 -e 01/07/2018 -l 3 -d euclidean"
+    "exportl": "node mainl.js -c decentraland -t sale -s 01/01/2018 -e 01/07/2018 -d euclidean"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bn.js": "^5.2.1",
+    "decimal.js": "^10.5.0",
     "dotenv": "^16.4.7",
     "exceljs": "^4.4.0",
     "minimist": "^1.2.8",
