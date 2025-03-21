@@ -1,0 +1,46 @@
+{
+    "1092": {
+        "id": "NORTH_PLAZA",
+        "name": "North Genesis Plaza"
+    },
+    "1094": {
+        "id": "NORTH_EAST_PLAZA",
+        "name": "North-East Genesis Plaza"
+    },
+    "1134": {
+        "id": "NORTH_WEST_PLAZA",
+        "name": "North-West Genesis Plaza"
+    },
+    "1096": {
+        "id": "EAST_PLAZA",
+        "name": "East Genesis Plaza"
+    },
+    "1132": {
+        "id": "WEST_PLAZA",
+        "name": "West Genesis Plaza"
+    },
+    "1164": {
+        "id": "CENTRAL_PLAZA",
+        "name": "Central Genesis Plaza"
+    },
+    "1112": {
+        "id": "SOUTH_EAST_PLAZA",
+        "name": "South-East Genesis Plaza"
+    },
+    "1130": {
+        "id": "SOUTH_WEST_PLAZA",
+        "name": "South-West Genesis Plaza"
+    },
+    "1127": {
+        "id": "SOUTH_PLAZA",
+        "name": "South Genesis Plaza"
+    },
+    "2841": {
+        "id": "PIXEL_1_PLAZA",
+        "name": "Pixel Plaza 2"
+    },
+    "2840": {
+        "id": "PIXEL_2_PLAZA",
+        "name": "Pixel Plaza 1"
+    }
+}
