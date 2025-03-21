@@ -367,6 +367,9 @@ async function main() {
     console.info(`${new Date()} - Fetching Operations...`);
     const operations = await fetchAllData(params);
     console.info(`${new Date()} - Operations fetched successfully. ${operations.length} operations !!!`);
+    
+    await mongoose.disconnect();
+    console.info(`${new Date()} - Disconnected from datasbase successfully !!`);
 
     const lines = [];
     console.info(`${new Date()} - Parsing Data...`);
@@ -374,7 +377,7 @@ async function main() {
     let i = 0;
     for (const operation of operations) {
         console.info(`${new Date()} - Parsing Data - Operation ${operation['_id'].toString()} (${(i+1)}/${count}) Begin...`);
-        const line = await linifyOperation(operation, operations, distanceType);
+        const line = linifyOperation(operation, operations, distanceType);
         console.info(`${new Date()} - Parsing Data - Operation ${operation['_id'].toString()} (${(i+1)}/${count}) DONE !!!`);
         i++;
         lines.push(line);
@@ -384,9 +387,6 @@ async function main() {
     console.info(`${new Date()} - Write Excel File`);
     await excelFile(lines);
     console.info(`${new Date()} - Excel Written successfully !!`);
-
-    await mongoose.disconnect();
-    console.info(`${new Date()} - Disconnected from datasbase successfully !!`);
 
     return true;
 }
